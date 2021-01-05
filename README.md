@@ -3,6 +3,12 @@
 
 ## Scripts
 
+Run npm install
+
+run npm install winston
+
+Run npm install uuid
+
 Start the application `npm start`
 
 Start nodemon for the application `npm run dev`
