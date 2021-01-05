@@ -5,7 +5,7 @@
 
 Run npm install
 
-run npm install winston
+Run npm install winston
 
 Run npm install uuid
 
