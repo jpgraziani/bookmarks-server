@@ -90,7 +90,7 @@ bookmarksRouter
   .delete((req, res) => {
     const { bookmark_id } = req.params
 
-    const bookmarkIndex = store.bookmarks.findIndex(b => b.id === bookmark_id)
+    const bookmarkIndex = store.bookmarks.findIndex(b => b.id == bookmark_id)
 
     if (bookmarkIndex === -1) {
       logger.error(`Bookmark with id ${bookmark_id} not found.`)
@@ -98,6 +98,8 @@ bookmarksRouter
         .status(404)
         .send('Bookmark Not Found')
     }
+
+
 
     store.bookmarks.splice(bookmarkIndex, 1)
 
